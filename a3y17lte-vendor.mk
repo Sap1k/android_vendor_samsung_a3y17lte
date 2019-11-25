@@ -268,11 +268,11 @@ PRODUCT_COPY_FILES += \
 
 # ril
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a3y17lte/proprietary/_ril/lib64/libsec_vaultkeeper_serverHal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec_vaultkeeper_serverHal.so \
-    vendor/samsung/a3y17lte/proprietary/_ril/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
-    vendor/samsung/a3y17lte/proprietary/_ril/lib64/libsec-ril.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec-ril.so \
-    vendor/samsung/a3y17lte/proprietary/_ril/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so \
-    vendor/samsung/a3y17lte/proprietary/_ril/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/_ril/lib64/libsec_vaultkeeper_serverHal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_vaultkeeper_serverHal.so \
+    vendor/samsung/a3y17lte/proprietary/_ril/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
+    vendor/samsung/a3y17lte/proprietary/_ril/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
+    vendor/samsung/a3y17lte/proprietary/_ril/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so \
+    vendor/samsung/a3y17lte/proprietary/_ril/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so \
     vendor/samsung/a3y17lte/proprietary/_ril/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/samsung/a3y17lte/proprietary/_ril/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/a3y17lte/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
