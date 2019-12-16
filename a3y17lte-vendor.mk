@@ -305,3 +305,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3y17lte/proprietary/vendor/etc/init/mobicore.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mobicore.rc \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcRegistry.so
+    
+# Bypass using VNDK (until we can access crucial OS libs properly)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.biometrics.face@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.1.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.2.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.face@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.1.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.2.so \
