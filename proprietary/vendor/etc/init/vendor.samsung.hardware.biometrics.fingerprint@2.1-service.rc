@@ -5,3 +5,4 @@ service vendor.fps_hal /vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerp
     class late_start
     user system
     group system input
+    setenv LD_PRELOAD "/vendor/lib/libbauthtzcommon_shim.so"
