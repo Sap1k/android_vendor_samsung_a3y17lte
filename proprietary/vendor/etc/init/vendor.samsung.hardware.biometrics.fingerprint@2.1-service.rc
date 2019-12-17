@@ -1,8 +1,8 @@
-service vendor.fps_hal /vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@2.1-service
+service vendor.fps_hal /system/vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@2.1-service
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.
     class late_start
     user system
     group system input
-    setenv LD_PRELOAD "/vendor/lib/libbauthtzcommon_shim.so"
+    setenv LD_PRELOAD "/system/vendor/lib/libbauthtzcommon_shim.so"
