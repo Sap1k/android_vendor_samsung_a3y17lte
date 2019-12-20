@@ -70,7 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/android.hardware.drm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.drm@1.0-impl.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/camera.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.universal7870.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/camera.universal7870.so:system/lib/hw/camera.universal7870.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/gatekeeper.exynos7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.exynos7870.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
@@ -82,15 +82,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/power.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.universal7870.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/sensors.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal7870.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/thermal.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.universal7870.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/libcamera_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_client.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosHWCService.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Core.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Resourcemanager.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libGrallocWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGrallocWrapper.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libantradio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libantradio.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsc.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynoscamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosdisplay.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynosgscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosgscaler.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libexynosscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynosscaler.so \
@@ -307,15 +307,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
     vendor/samsung/a3y17lte/proprietary/vendor/lib/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcRegistry.so
     
-# Bypass using VNDK
-PRODUCT_COPY_FILES += \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.biometrics.face@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.biometrics.fingerprint@2.1.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.1.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.2.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.face@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.1.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.2.so
